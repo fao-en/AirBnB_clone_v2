@@ -1,12 +1,9 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 # Fabric script (based on the file 2-do_deploy_web_static.py)
 # that creates and distributes an archive to your web servers.
-import os.path
 from datetime import datetime
-from fabric.api import env
-from fabric.api import local
-from fabric.api import put
-from fabric.api import run
+import os.path
+from fabric.api import env, local, put, run
 
 env.hosts = ["52.87.28.205", "34.229.69.104"]
 
